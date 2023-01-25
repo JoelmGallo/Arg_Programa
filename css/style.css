@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #323437;
+  padding-top: 80px;
+  margin: 0px 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* NAVEGADOR */
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.628);
+  min-height: 80px;
+  background-color: #323437;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+  height: 80px;
+  max-width: 1400px;
+}
+
+.nav a div {
+  padding: 10px;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  color: #e2b714;
+}
+.logo img {
+  width: 65px;
+}
+
+/* Menu */
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+.menu li {
+  padding: 20px;
+  list-style: none;
+}
+.menu a {
+  color: white;
+}
+
+.abrir-menu,
+.cerrar-menu {
+  display: none;
+}
+
+/* INICIO - SECCION PERFIL */
+
+h1 {
+  font-size: 70px;
+  margin: 50px 0px 30px 0px;
+  color: #e2b714;
+  border: double 4px #e2b714;
+  font-family: "Space Mono", monospace;
+  /* font-family: 'El Messiri', sans-serif; */
+}
+
+#perfil {
+  text-align: center;
+}
+
+.perfilTxt p {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.3;
+  max-width: 900px;
+  margin: auto;
+}
+
+.perfilImg img {
+  border-radius: 100%;
+  border-style: solid;
+  margin: 30px;
+  min-width: 18%;
+  height: auto;
+}
+
+/* SECCION EXPERIENCIA & HABILIDADES */
+
+h2 {
+  padding: 30px 0px 15px 0px;
+  color: #e2b714;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+  font-size: 24px;
+}
+
+.main-container {
+  margin: 0px auto 0px auto;
+  color: white;
+  text-align: justify;
+  max-width: 1000px;
+  font-family: "sans-serif", "Arial", "Calibri";
+}
+
+.main-container ul {
+  margin-bottom: 20px;
+}
+
+.main-container li {
+  margin: 10px 20px 10px 45px;
+  font-size: 20px;
+}
+
+/* SECCION CONTACTO */
+
+.container-contacto {
+  display: flex;
+  flex-direction: row;
+  height: 220px;
+  justify-content: space-between;
+  max-width: 700px;
+}
+
+.info-contacto div {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.info-contacto i {
+  color: #e2b714;
+}
+
+.info-contacto p {
+  padding-left: 10px;
+}
+
+.formulario-contacto form {
+  display: grid;
+  grid-template-columns: 40vmin;
+  gap: 10px;
+  margin-right: 10px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  border-radius: 8px;
+  border: none;
+  height: 25px;
+  padding: 5px;
+}
+
+.formulario-contacto textarea {
+  height: auto;
+  resize: vertical;
+}
+
+.formulario-contacto button {
+  height: 22px;
+  border-radius: 50px;
+  width: 30%;
+  align-items: center;
+  border: none;
+}
+
+.formulario-contacto button:hover {
+  color: #e2b714;
+  background-color: #323437;
+  border: solid;
+  border-width: 2px;
+  border-color: white;
+}
+
+/* Media Query */
+
+@media (max-width: 450px) {
+  body {
+    margin: 0px 15px;
+  }
+
+  h1 {
+    font-size: 45px;
+    margin: 40px 0px 30px 0px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+
+  .nav {
+    padding-left: 10px;
+  }
+
+  .perfilTxt p {
+    font-size: 20px;
+    line-height: 1;
+    margin: 0px 8px;
+    /* display: inline-flexbox; */
+    text-align: justify;
+  }
+
+  .main-container li {
+    margin: 10px 20px 10px 35px;
+    font-size: 18px;
+  }
+
+  .container-contacto {
+    display: flex;
+    flex-direction: column;
+    height: 220px;
+  }
+
+  .formulario-contacto form {
+    display: grid;
+    grid-template-columns: 60vmin;
+    gap: 10px;
+    margin: auto;
+    justify-content: center;
+    padding: 10px 0px;
+  }
+}
+
+@media (max-width: 770px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: #323437;
+    margin-top: 78px;
+    height: 120px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.628);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu li {
+    padding: 5px;
+  }
+  .menu a {
+    color: #e2b714;
+  }
+
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+    border: none;
+    background: none;
+    color: #e2b714;
+  }
+
+  .cerrar-menu {
+    align-self: flex-end;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 32px 27px;
+    background-color: #323437;
+  }
+
+  .menu-abierto {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .body-menu-abierto {
+    margin-top: 120px;
+  }
+}

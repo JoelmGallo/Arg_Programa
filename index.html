@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Celina Carlson | CV</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri&family=Space+Mono&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/67eb893f05.js" crossorigin="anonymous"></script>
+  <script defer src="js/interaccion.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="#perfil" class="logo">
+        <img src="img/logo.png" alt="Logo web developer">
+        <div>Celina Carlson</div>
+      </a>
+      <button class="abrir-menu" aria-label="Botón abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="menu">
+        <button class="cerrar-menu" aria-label="Botón cerrar menú">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <ul>
+          <li><a href="#perfil" aria-label="Enlace a la sección del perfil">Perfil</a></li>
+          <li><a href="#experiencia" aria-label="Enlace a la sección de experiencia">Experiencia</a></li>
+          <li><a href="#habilidades" aria-label="Enlace a la sección de habilidades">Habilidades</a></li>
+          <li><a href="#contacto" aria-label="Enlace a la sección de contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-container">
+    <section id="perfil">
+      <h1>Web<br>Developer</h1>
+      <div class="perfilTxt">
+        <p>
+          Me presento, soy Celina Carlson. Ingeniera en Informática con más de 3 años de experiencia en el diseño y
+          desarrollo de software. Competente en
+          tecnologías del lado del servidor, variedad de plataformas y
+          herramientas de desarrollo. Capaz de trabajar de forma
+          independiente, así como siendo parte de un equipo.
+        </p>
+      </div>
+      <div class="perfilImg">
+        <img src="img/perfil.jpg" alt="Foto perfil de la programadora">
+      </div>
+    </section>
+    <section id="experiencia">
+      <h2>Experiencia</h2>
+      <h3>2020-2021<br>Sistemas Informáticos SL</h3>
+      <ul>
+        <li>
+          A lo largo de mi estancia, participé en más de 15 proyectos
+          digitales y colaboré con un equipo de diseñadores, copywriters
+          creativos, project managers y Q&A testers.
+        </li>
+        <li>
+          Reduje el porcentaje de errores mensuales de la página de inicio del
+          portal de la compañía en un 10%.
+        </li>
+        <li>
+          Como parte del equipo de mejoras continuas de la empresa, colaboré
+          para optimizar los tiempos de carga de la página web en un 15%.
+        </li>
+      </ul>
+      <h3>2021-2023<br>Banco Santander</h3>
+      <ul>
+        <li>
+          Desarrollo Front End y Back End de aplicaciones web para clientes de
+          la empresa del sector financiero utilizando Javascript, MySQL y
+          HTML5.
+        </li>
+        <li>Soporte técnico y toma de requerimientos a los clientes.</li>
+        <li>Maquetación HTML5, CSS3, Bootstrap.</li>
+        <li>Manejo de datos XML, JSON.</li>
+      </ul>
+    </section>
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <h3>Lenguajes</h3>
+      <ul>
+        <li>HTML5 y CSS3.</li>
+        <li>Javascript y React.</li>
+        <li>Conocimiento de bases de datos MySQL y PostgreSQL.</li>
+        <li>Dominio de PHP.</li>
+        <li>Fundamentos de Python y Typscript.</li>
+      </ul>
+      <h3>Idiomas</h3>
+      <ul>
+        <li>Español nativo.</li>
+        <li>Inglés avanzado.</li>
+      </ul>
+      <h3>Aptitudes</h3>
+      <ul>
+        <li>Capacidad de liderazgo y comunicación.</li>
+        <li>Aprendizaje fluido.</li>
+        <li>Capacidad analítica.</li>
+      </ul>
+    </section>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <div class="container-contacto">
+        <div class="info-contacto">
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <p>1165749618</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <p>Celi_Carlson@gmail.com</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Buenos Aires, Argentina</p>
+          </div>
+        </div>
+        <div class="formulario-contacto">
+          <form>
+            <input required type="text" name="nombre" placeholder="Ingrese su nombre">
+            <input required type="email" name="email" placeholder="Ingrese su Email">
+            <textarea required name="mensaje" id="mensaje" placeholder="Ingrese su mensaje" rows="5"></textarea>
+            <button type="submit" class="boton-enviar">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
